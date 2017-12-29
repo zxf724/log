@@ -1,0 +1,16 @@
+
+strcpy()与strncpy()
+strcpy()：strcpy(dest,src);    strcpy把src所指向以'\0'结尾的字符串复制到dest所指的数组中，返回指向dest的指针。     
+当sizeof(dest)>=sizeof(src)时，拷贝正确，并在dest字符串后面加入'\0';
+当sizeof(dest)<sizeof(src)时，拷贝出错。
+strcpy()：strcpy(dest,src);    strcpy把src所指向以'\0'结尾的字符串复制到dest所指的数组中，返回指向dest的指针。
+当sizeof(dest)>=sizeof(src)时，拷贝正确，并在dest字符串后面加入'\0';
+当sizeof(dest)<sizeof(src)时，拷贝出错。
+
+atoi()函数
+atoi():int atoi(const char *str );
+功能：把字符串转换成整型数。
+str：要进行转换的字符串
+返回值：每个函数返回 int 值，此值由将输入字符作为数字解析而生成。 如果该输入无法转换为该类型的值，则atoi的返回值为 0。
+说明：当第一个字符不能识别为数字时，函数将停止读入输入字符串。
+
